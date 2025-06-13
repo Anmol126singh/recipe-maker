@@ -1,107 +1,94 @@
-
-* {
-    box-sizing: border-box;
+*{
+  box-sizing: border-box;
 }
 
-body {
-    font-family: "Karla", sans-serif;
-    margin: 0;
+body{
+  margin:0;
+  font-family: inter;
+  background-color: white(43, 42, 42);
+  color: black;
 }
+header{
 
-main {
-    margin-inline: auto;
-    padding: 36px;
-    max-width: 600px;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    height: 65px;
-    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-    color: white;
-    padding: 20px;
-}
-
-.header > img {
-    height: 100%;
-    margin-right: 6px;
-}
-
-.header > h1 {
-    font-size: 1.25rem;
-    margin-right: auto;
-}
-
-.form {
-    display: grid;
-    grid-template: auto auto / 1fr 1fr;
-    gap: 17px;
-    margin-bottom: 17px;
-}
-
-.form input {
     width: 100%;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #D5D4D8;
-    text-indent: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px;
+
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);}
+header img{
+  width:40px;
+  margin-right: 15px;
+
 }
 
-.form button {
-    grid-column: 1 / -1;
-    border-radius: 5px;
-    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-    color: white;
-    border: none;
-    cursor: pointer;
+header span{
+  font-size: 1.6rem;
+  color: black;
 }
-
-.form input, .form button {
-    min-height: 40px;
-    font-family: "Karla", sans-serif;
+form{
+  display: flex;
+   justify-content: center;
+    gap: 10px;
+   padding-top: 40px;
+   width: 100vw;
 }
+.wrapper{
+  display: flex;
 
-.meme {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
 }
-
-.meme > img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 3px;
+form>input{
+  border-radius: 6px;
+  border:1px solid #D1D5DB;
+ padding: 9px 13px;
+ flex-grow: 1;
+ min-width: 150px;
+ max-width: 500px;
 }
-
-.meme span {
-    position: absolute;
-    text-align: center;
-    margin-block: 15px;
-    padding-inline: 5px;
-    font-family: impact, sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 1px;
-    text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        0 2px 0 #000,
-        2px 0 0 #000,
-        0 -2px 0 #000,
-        -2px 0 0 #000,
-        2px 2px 5px #000;
+form>button{
+  border-radius:6px;
+  border:none;
+    background-color: #141413;
+        color: #FAFAF8;
+      font-family: inter;
+      width:170px;
+       font-size: 0.875rem;
+    font-weight: 500;
 }
-
-.bottom {
-    bottom: 0;
+ul{
+  color: black;
+ 
 }
+section{
+ position: relative;
+  left:27%;
 
-.top {
-    top: 0;
+  padding: 20px;
+  padding-top: 0px;
+}
+.getrecipe-container{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  padding-top: 0;
+  background-color: rgba(110, 110, 104, 0.398);
+  left:0;
+  justify-content: space-between;
+  width: 35%;
+  border-radius: 6px;
+  margin-left: -20px;
+}
+.getrecipe-container p{
+  color: #1414137d;
+  font-weight: 600;
+}
+.getrecipe-container button{
+  background-color: rgb(255, 140, 0);
+  color: white;
+  padding: 10px 17px;
+  border: none;
+  border-radius: 6px;
 }
