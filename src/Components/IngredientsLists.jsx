@@ -5,7 +5,7 @@ function IngredientsLists(props) {
   return (
 <section>
     <h1>Ingredients on hand:</h1>
- <ul>
+ <ul data-testId="item">
     {props.list}
    </ul>
     {props.list.length>3 && <div ref={props.ref} className="getrecipe-container">

@@ -43,7 +43,10 @@ function Main() {
     <input type="text" aria-label="add indgredient" placeholder="Oregaon etc" name="ingredient" />
     <button>+ Add ingredient</button>
    </form>
+   <div data-testId = "indgredients">
    {indgredientlist.length>0 && <IngredientsLists ref={RecipeSection} list = {indgredientlist} click={getrecipe} /> }
+
+   </div>
 { recipe  &&  <ClaudeRecipe recipe={recipe} />
 }  
    </div>
